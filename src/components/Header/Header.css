@@ -1,0 +1,51 @@
+.header {
+    display: flex;
+    gap: 30px;
+}
+.logo {
+  width: 186px;
+  height: 60px;
+  top: 0;
+  left: 0;
+}
+.header h4 {
+  font-weight: 400;
+  font-size: 14px;
+  color: Grayscale/800 rgb(38, 49, 65);
+}
+.products {
+  width: 200px;
+  height: 52px;
+  padding: 16px, 20px, 16px, 20px;
+  background: rgb(255, 77, 77);
+  font-weight: 500;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 5px;
+}
+.header input {
+  width: 641px;
+  height: 52px;
+  padding: 14px, 20px, 14px, 20px;
+  background-color: rgb(242, 245, 249);
+  font-weight: 400;
+  font-size: 16px;
+  color: rgb(161, 171, 185);
+  outline: none;
+  border: none;
+}
+.btns button {
+    width: 52px;
+    height: 52px;
+    padding: 14px, 14px, 14px, 14px;
+    background-color: rgb(242, 245, 249);
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 400;
+}
+.btns {
+    display: flex;
+    gap: 20px;
+}
