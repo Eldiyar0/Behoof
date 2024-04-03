@@ -1,0 +1,153 @@
+.header {
+  display: flex;
+  gap: 30px;
+}
+.logo {
+  width: 186px;
+  height: 60px;
+  top: 0;
+  left: 0;
+}
+.header h4 {
+  font-weight: 400;
+  font-size: 14px;
+  color: Grayscale/800 rgb(38, 49, 65);
+}
+.products {
+  width: 200px;
+  height: 52px;
+  padding: 16px, 20px, 16px, 20px;
+  background: rgb(255, 77, 77);
+  font-weight: 500;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 5px;
+}
+.header input {
+  width: 641px;
+  height: 52px;
+  padding: 14px, 20px, 14px, 20px;
+  background-color: rgb(242, 245, 249);
+  font-weight: 400;
+  font-size: 16px;
+  color: rgb(161, 171, 185);
+  outline: none;
+  border: none;
+}
+.btns button {
+  width: 52px;
+  height: 52px;
+  padding: 14px, 14px, 14px, 14px;
+  background-color: rgb(242, 245, 249);
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 400;
+}
+.btns {
+  display: flex;
+  gap: 20px;
+}
+.products__text {
+  display: flex;
+  gap: 12px;
+}
+.main {
+  color: rgb(161, 171, 185);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.qwe {
+  color: rgb(38, 49, 65);
+  font-size: 16px;
+  line-height: 20px;
+}
+.smartphone {
+  color: rgb(15, 17, 19);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.title {
+  color: rgb(38, 49, 65);
+  font-family: Inter;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 58px;
+}
+.hero-text {
+  color: rgb(38, 49, 65);
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+}
+.characteristics {
+  border: 1px solid rgb(242, 245, 249);
+  border-radius: 12px;
+  position: static;
+  width: 734px;
+  height: 344px;
+  background: rgb(253, 253, 253);
+}
+.characteristics-title {
+  color: rgb(15, 17, 19);
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.characteristics-text {
+  color: rgb(38, 49, 65);
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.btn {
+  position: static;
+  width: 127px;
+  height: 44px;
+  padding: 12px;
+  border-radius: 8px;
+  background: rgb(242, 245, 249);
+  border: none;
+  margin: 0 12px;
+}
+.Range {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: static;
+  width: 200px;
+  height: 116px;
+  padding: 0px;
+  flex: none;
+  order: 3;
+  flex-grow: 0;
+  margin: 12px 0;
+}
+.radio {
+  color: rgb(15, 17, 19);
+}
+
+.Battery {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.characteristics__btn {
+  display: flex;
+}
