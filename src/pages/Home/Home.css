@@ -1,0 +1,202 @@
+#home {
+  margin-top: 30px;
+}
+.category {
+  display: flex;
+  justify-content: space-around;
+}
+.category1 {
+  background-color: rgb(242, 245, 249);
+  width: 550px;
+  height: 200px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h1 {
+    font-family: Inter;
+    font-weight: 800;
+    font-size: 28px;
+    color: rgb(15, 17, 19);
+    span {
+      color: rgb(255, 77, 77);
+    }
+  }
+  button {
+    background-color: rgb(255, 77, 77);
+    color: rgb(255, 255, 255);
+    width: 200px;
+    height: 52px;
+    border: none;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    right: 150px;
+  }
+}
+.category2 {
+  background-color: rgb(242, 245, 249);
+  width: 400px;
+  height: 200px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h1 {
+    font-family: Inter;
+    font-weight: 800;
+    font-size: 28px;
+    color: rgb(15, 17, 19);
+    span {
+      color: rgb(255, 77, 77);
+    }
+  }
+  button {
+    background-color: rgb(255, 77, 77);
+    color: rgb(255, 255, 255);
+    width: 120px;
+    height: 52px;
+    border: none;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    right: 150px;
+  }
+}
+.bestChoise {
+  display: flex;
+  margin-top: 70px;
+  background-color: rgb(242, 245, 249);
+}
+.gadgets {
+  h2 {
+    font-weight: 600;
+    font-size: 24px;
+    font-family: Inter;
+  }
+  .products {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+}
+.phone {
+  width: 164px;
+  height: 164px;
+  background-color: white;
+  border-radius: 5px;
+  padding: 5px 0 5px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h5 {
+    font-weight: 600;
+    font-family: Inter;
+    font-size: 16px;
+  }
+}
+.laptop {
+  width: 164px;
+  height: 164px;
+  background-color: white;
+  border-radius: 5px;
+  padding: 5px 0 5px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h5 {
+    font-weight: 600;
+    font-family: Inter;
+    font-size: 16px;
+  }
+}
+.tablet {
+  width: 164px;
+  height: 164px;
+  background-color: white;
+  border-radius: 5px;
+  padding: 5px 0 5px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h5 {
+    font-weight: 600;
+    font-family: Inter;
+    font-size: 16px;
+  }
+}
+.clock {
+  width: 164px;
+  height: 164px;
+  background-color: white;
+  border-radius: 5px;
+  padding: 5px 0 5px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h5 {
+    font-weight: 600;
+    font-family: Inter;
+    font-size: 16px;
+  }
+}
+.play {
+  width: 164px;
+  height: 164px;
+  background-color: white;
+  border-radius: 5px;
+  padding: 5px 0 5px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h5 {
+    font-weight: 600;
+    font-family: Inter;
+    font-size: 16px;
+  }
+}
+.head-phones {
+  width: 164px;
+  height: 164px;
+  background-color: white;
+  border-radius: 5px;
+  padding: 5px 0 5px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h5 {
+    font-weight: 600;
+    font-family: Inter;
+    font-size: 16px;
+  }
+}
+.speaker {
+  width: 164px;
+  height: 164px;
+  background-color: white;
+  border-radius: 5px;
+  padding: 5px 0 5px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h5 {
+    font-weight: 600;
+    font-family: Inter;
+    font-size: 16px;
+  }
+}
+.acc {
+  width: 164px;
+  height: 164px;
+  background-color: white;
+  border-radius: 5px;
+  padding: 5px 0 5px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h5 {
+    font-weight: 600;
+    font-family: Inter;
+    font-size: 16px;
+  }
+}
