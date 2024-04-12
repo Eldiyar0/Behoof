@@ -1,0 +1,13 @@
+@media (max-width: 375px) {
+	.btns {
+		display: none;
+	}
+	.products1 {
+		display: none;
+	}
+	.header {
+		display: flex;
+		flex-direction: column;
+		width: auto;
+	}
+}
