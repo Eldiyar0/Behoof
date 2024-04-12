@@ -14,7 +14,7 @@
 	width: 145px;
 	color: Grayscale/800 rgb(38, 49, 65);
 }
-.products {
+.products1 {
 	width: 200px;
 	height: 52px;
 	padding: 16px, 20px, 16px, 20px;
@@ -61,4 +61,25 @@
 	align-items: center;
 	justify-content: space-between;
 	width: 350px;
+}
+
+@media (max-width: 375px) {
+	.btns {
+		display: none;
+	}
+	.f {
+		display: none;
+	}
+	.header {
+		display: flex;
+		flex-direction: column;
+		width: auto;
+	}
+	.header input {
+		width: 100%;
+		border-radius: 10px;
+	}
+	.headerButtonInInput {
+		width: 100%;
+	}
 }

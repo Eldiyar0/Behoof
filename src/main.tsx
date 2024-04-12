@@ -2,6 +2,7 @@ import ReactDOM from 'react-dom/client'
 import { BrowserRouter } from 'react-router-dom'
 import App from './App'
 import './index.css'
+import './adaptiv/GlavaAdaptiv.css'
 import MyRoutes from './routes/MyRoutes'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(

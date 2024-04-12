@@ -14,7 +14,9 @@ const Header = () => {
 						<h4>Лучшие цены в интернет-магазинах </h4>
 					</div>
 					<div className='headerButtonInInput'>
-						<button className='products'>Каталог товаров</button>
+						<div className='f'>
+							<button className='products1'>Каталог товаров</button>
+						</div>
 						<input type='text' placeholder='Поиск товаров' />
 					</div>
 					<div className='btns'>

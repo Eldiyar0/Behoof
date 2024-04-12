@@ -2,6 +2,9 @@ import { FaRankingStar } from 'react-icons/fa6'
 import { GrFormClose } from 'react-icons/gr'
 import { IoHeartOutline } from 'react-icons/io5'
 import { MdNavigateNext } from 'react-icons/md'
+import Slider from 'react-slick'
+import 'slick-carousel/slick/slick-theme.css'
+import 'slick-carousel/slick/slick.css'
 import images1 from '../../assets/image/1.png'
 import images2 from '../../assets/image/2.png'
 import Laptop from '../../assets/image/Laptop.2.svg'
@@ -44,6 +47,52 @@ import {
 import './Home.css'
 
 const Home = () => {
+	const settings = {
+		dots: true,
+		infinite: true,
+		speed: 500,
+		slidesToShow: 6,
+		slidesToScroll: 1,
+		adaptiveWidth: true,
+		responsive: [
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 3
+				}
+			},
+			{
+				breakpoint: 375,
+				settings: {
+					slidesToShow: 2
+				}
+			}
+		]
+	}
+
+	const settings12 = {
+		dots: true,
+		infinite: true,
+		speed: 500,
+		slidesToShow: 4,
+		slidesToScroll: 1,
+		adaptiveWidth: true,
+		responsive: [
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 3
+				}
+			},
+			{
+				breakpoint: 375,
+				settings: {
+					slidesToShow: 1
+				}
+			}
+		]
+	}
+
 	return (
 		<div id='home'>
 			<div className='con'>
@@ -52,8 +101,8 @@ const Home = () => {
 						<div className='category'>
 							<div className='category1'>
 								<h1>
-									<span>1.8 млн</span> товаров в <span>2272</span> магазинах{' '}
-									<br /> найди, сравни, выберай!
+									<span>1.8 млн</span> товаров в <span>2272</span> магазинах
+									найди, сравни, выберай!
 								</h1>
 								<button>
 									Перейти к категориям
@@ -75,57 +124,94 @@ const Home = () => {
 						<div className='container'>
 							<div className='gadgests'>
 								<h2>Лучший выбор</h2>
-								<div className='gadgetsProducts'>
-									<div className='planLogo'>
-										<img src={phone} alt='' />
-										<h5>Смартфоны</h5>
-									</div>
-									<div className='planLogo'>
-										<img src={laptop} alt='' />
-										<h5>Ноутбуки</h5>
-									</div>
-									<div className='planLogo'>
-										<img src={tablet} alt='' />
-										<h5>Планшеты</h5>
-									</div>
-									<div className='planLogo'>
-										<img src={clock} alt='' />
-										<h5>Умные часы</h5>
-									</div>
-									<div className='planLogo'>
-										<img src={play} alt='' />
-										<h5>Игровые приставки</h5>
-									</div>
-									<div className='planLogo'>
-										<img src={head} alt='' />
-										<h5>Наушники</h5>
-									</div>
-									<div className='planLogo'>
-										<img src={speaker} alt='' />
-										<h5>Портативные колонки</h5>
-									</div>
-									<div className='planLogo'>
-										<img src={acc} alt='' />
-										<h5>Аксесуары</h5>
-									</div>
+								<div className=''>
+									<Slider {...settings}>
+										<div>
+											<div className='planLogo'>
+												<img src={phone} alt='' />
+												<h5>Смартфоны</h5>
+											</div>
+										</div>
+										<div>
+											<div className='planLogo'>
+												<img src={laptop} alt='' />
+												<h5>Ноутбуки</h5>
+											</div>
+										</div>
+										<div>
+											<div className='planLogo'>
+												<img src={tablet} alt='' />
+												<h5>Планшеты</h5>
+											</div>
+										</div>
+										<div>
+											<div className='planLogo'>
+												<img src={clock} alt='' />
+												<h5>Умные часы</h5>
+											</div>
+										</div>
+										<div>
+											<div className='planLogo'>
+												<img src={play} alt='' />
+												<h5>Игровые приставки</h5>
+											</div>
+										</div>
+										<div>
+											<div className='planLogo'>
+												<img src={head} alt='' />
+												<h5>Наушники</h5>
+											</div>
+										</div>
+										<div>
+											{' '}
+											<div className='planLogo'>
+												<img src={speaker} alt='' />
+												<h5>Портативные колонки</h5>
+											</div>
+										</div>
+										<div>
+											<div className='planLogo'>
+												<img src={acc} alt='' />
+												<h5>Аксесуары</h5>
+											</div>
+										</div>
+									</Slider>
 								</div>
 							</div>
 							<div className='proDet'>
-								<div className='btnCategory'>
-									<button className='x'>
-										Дизайн
-										<span>
-											<GrFormClose />
-										</span>
-									</button>
-									<button className='y'>
-										Портативность
-										<GrFormClose />
-									</button>
-									<button>Камера</button>
-									<button>Ответ</button>
-									<button>Дисплей</button>
-									<button>Батарея</button>
+								<div className='a'>
+									<Slider {...settings}>
+										<div>
+											<button className='s'>
+												Дизайн
+												<span>
+													<GrFormClose />
+												</span>
+											</button>
+										</div>
+										<div>
+											<button className='s'>
+												Портативность
+												<GrFormClose />
+											</button>
+										</div>
+										<div>
+											{' '}
+											<button className='s'>Камера</button>
+										</div>
+										<div>
+											{' '}
+											<button className='s'>Ответ</button>
+										</div>
+										<div>
+											{' '}
+											<button className='s'>Дисплей</button>
+										</div>
+										<div>
+											{' '}
+											<button className='s'>Батарея</button>
+										</div>
+									</Slider>
 								</div>
 								<div className='grade'>
 									<div className='grInf'>
@@ -414,7 +500,7 @@ const Home = () => {
 											<img src={Phone} alt='' />
 										</div>
 										<p>Смартфоны</p>
-										<h4 className='smartClockImages'>
+										<h4>
 											Apple iPhone 13 Pro <br /> Max 256 ГБ серый
 										</h4>
 										<div className='price'>
@@ -437,7 +523,7 @@ const Home = () => {
 											<img src={accessories} alt='' />
 										</div>
 										<p>Аксесуары</p>
-										<h4 className='smartClockImages'>
+										<h4>
 											Apple iPhone 13 Pro <br /> Max 256 ГБ серый
 										</h4>
 										<div className='price'>
@@ -538,71 +624,83 @@ const Home = () => {
 									<MdNavigateNext />
 								</button>
 							</div>
-							<div className='detail'>
-								<div className='revPhone'>
-									<img src={revPhone} alt='' />
-									<div className='revPhoneText'>
-										<h3>
-											Обзор устаревших <br /> смартфонов
-										</h3>
-										<p>
-											Lorem ipsum dolor sit amet consectetur. <br /> Rhoncus
-											risus viverra enim nunc.{' '}
-										</p>
-										<button>
-											Смотреть
-											<MdNavigateNext />
-										</button>
-									</div>{' '}
-								</div>
-								<div className='revPhone'>
-									<img src={revComp} alt='' />
-									<div className='revPhoneText'>
-										<h3>
-											Обзор устаревших <br /> смартфонов
-										</h3>
-										<p>
-											Lorem ipsum dolor sit amet consectetur. <br /> Rhoncus
-											risus viverra enim nunc.{' '}
-										</p>
-										<button>
-											Смотреть
-											<MdNavigateNext />
-										</button>
+							<div className='detasil'>
+								<Slider {...settings12}>
+									<div>
+										<div className='revPhone'>
+											<img src={revPhone} alt='' />
+											<div className='revPhoneText'>
+												<h3>
+													Обзор устаревших <br /> смартфонов
+												</h3>
+												<p>
+													Lorem ipsum dolor sit amet consectetur. <br /> Rhoncus
+													risus viverra enim nunc.{' '}
+												</p>
+												<button>
+													Смотреть
+													<MdNavigateNext />
+												</button>
+											</div>{' '}
+										</div>
 									</div>
-								</div>
-								<div className='revPhone'>
-									<img src={revRadio} alt='' />
-									<div className='revPhoneText'>
-										<h3>
-											Обзор устаревших <br /> смартфонов
-										</h3>
-										<p>
-											Lorem ipsum dolor sit amet consectetur. <br /> Rhoncus
-											risus viverra enim nunc.{' '}
-										</p>
-										<button>
-											Смотреть
-											<MdNavigateNext />
-										</button>
+									<div>
+										{' '}
+										<div className='revPhone'>
+											<img src={revComp} alt='' />
+											<div className='revPhoneText'>
+												<h3>
+													Обзор устаревших <br /> смартфонов
+												</h3>
+												<p>
+													Lorem ipsum dolor sit amet consectetur. <br /> Rhoncus
+													risus viverra enim nunc.{' '}
+												</p>
+												<button>
+													Смотреть
+													<MdNavigateNext />
+												</button>
+											</div>
+										</div>
 									</div>
-								</div>
-								<div className='revPhone'>
-									<img src={revHead} alt='' />
-									<div className='revPhoneText'>
-										<h3>
-											Обзор устаревших <br /> смартфонов
-										</h3>
-										<p>
-											Lorem ipsum dolor sit amet consectetur. <br /> Rhoncus
-											risus viverra enim nunc.{' '}
-										</p>
-										<button>
-											Смотреть
-											<MdNavigateNext />
-										</button>
+									<div>
+										{' '}
+										<div className='revPhone'>
+											<img src={revRadio} alt='' />
+											<div className='revPhoneText'>
+												<h3>
+													Обзор устаревших <br /> смартфонов
+												</h3>
+												<p>
+													Lorem ipsum dolor sit amet consectetur. <br /> Rhoncus
+													risus viverra enim nunc.{' '}
+												</p>
+												<button>
+													Смотреть
+													<MdNavigateNext />
+												</button>
+											</div>
+										</div>
 									</div>
-								</div>
+									<div>
+										<div className='revPhone'>
+											<img src={revHead} alt='' />
+											<div className='revPhoneText'>
+												<h3>
+													Обзор устаревших <br /> смартфонов
+												</h3>
+												<p>
+													Lorem ipsum dolor sit amet consectetur. <br /> Rhoncus
+													risus viverra enim nunc.{' '}
+												</p>
+												<button>
+													Смотреть
+													<MdNavigateNext />
+												</button>
+											</div>
+										</div>
+									</div>
+								</Slider>
 							</div>
 						</div>
 					</div>

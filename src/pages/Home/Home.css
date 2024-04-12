@@ -25,6 +25,7 @@
 .category1 h1 span {
 	color: rgb(255, 77, 77);
 }
+
 .category1 button {
 	background-color: rgb(255, 77, 77);
 	color: rgb(255, 255, 255);
@@ -224,7 +225,11 @@
 	gap: 20px;
 	align-items: center;
 }
-.btnCategory button {
+.a {
+	margin-top: 3pc;
+	margin-bottom: 4pc;
+}
+.s {
 	border: none;
 	background: rgb(253, 253, 253);
 	width: 120px;
@@ -236,13 +241,7 @@
 	justify-content: center;
 }
 
-.btnCategory button:hover {
-	border: none;
-	background: rgb(253, 253, 253);
-	width: 120px;
-	height: 40px;
-	border-radius: 5px;
-	font-size: 14px;
+.s:hover {
 	color: rgb(255, 77, 77);
 
 	display: flex;
@@ -445,6 +444,7 @@
 	background: rgb(242, 245, 249);
 	width: 310px;
 	border-radius: 10px;
+	padding-bottom: 1.4pc;
 }
 .revPhone img {
 	width: 100%;
@@ -545,10 +545,149 @@
 	color: black;
 }
 
-.category.revPhoneText button {
-	scroll-behavior: auto;
-}
+@media (max-width: 375px) {
+	.category {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		gap: 20px;
+	}
+	.category1 {
+		width: 288px;
+	}
+	.category2 {
+		width: 288px;
+	}
 
-.category {
-	scroll-behavior: auto;
+	.category1 h1 {
+		font-family: Inter;
+		font-weight: 900;
+		font-size: 21px;
+		color: rgb(15, 17, 19);
+	}
+	.category2 h1 {
+		font-family: Inter;
+		font-weight: 900;
+		font-size: 21px;
+		color: rgb(15, 17, 19);
+	}
+	.gadgetsProducts {
+		display: flex;
+		flex-direction: column;
+	}
+	.grInf {
+		align-items: center;
+		width: 100%;
+		justify-content: start;
+		display: flex;
+		overflow: scroll;
+		/* flex-direction: row; */
+		align-content: center;
+		flex-wrap: nowrap;
+	}
+	.tekst {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+	.economic {
+		display: flex;
+		margin-top: 5pc;
+		background: rgb(246, 247, 250);
+		flex-direction: column;
+		align-items: flex-start;
+		padding: 10px;
+	}
+	.economicTextInButton h1 {
+		font-size: 27px;
+		font-weight: 700;
+		line-height: 35px;
+		padding-bottom: 20px;
+		width: 100%;
+	}
+	.economicTextInButton h1 span {
+		font-size: 27px;
+		font-weight: 700;
+		line-height: 35px;
+
+		padding-bottom: 20px;
+	}
+	.economicTextButtonsA img {
+		width: 300px;
+		margin-bottom: 1pc;
+	}
+	.newProducts1 {
+		display: flex;
+		align-items: flex-start;
+		width: 100%;
+		justify-content: start;
+		overflow: scroll;
+		/* flex-direction: row; */
+		flex-wrap: nowrap;
+	}
+	.newProducts2 {
+		display: flex;
+		align-items: flex-start;
+		width: 100%;
+		overflow: scroll;
+		/* flex-direction: row; */
+		justify-content: start;
+
+		flex-wrap: nowrap;
+	}
+	.smartClock {
+		width: 341px;
+		background: rgb(242, 245, 249);
+		display: flex;
+		flex-direction: column;
+		padding: 20px 20px;
+		height: 250px;
+		justify-content: space-around;
+		border-radius: 10px;
+	}
+	.smartClock h4 {
+		color: rgb(38, 49, 65);
+		font-family: Inter;
+		font-size: 10px;
+		font-weight: 600;
+		line-height: 17px;
+		letter-spacing: 0%;
+		text-align: left;
+		font-family: Inter;
+	}
+
+	.detail {
+		display: flex;
+		align-items: flex-start;
+		overflow: scroll;
+		justify-content: space-between;
+		/* flex-direction: row; */
+		flex-wrap: nowrap;
+	}
+	.footer {
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+		gap: 40px;
+	}
+	.footerEndText {
+		color: rgb(161, 171, 185);
+		font-family: Inter;
+		font-size: 13px;
+		font-weight: 400;
+		line-height: 24px;
+		margin-bottom: 0.2pc;
+		letter-spacing: 0%;
+		text-align: left;
+	}
+	.products10 {
+		border-radius: 10px;
+		width: 300px;
+		background-color: rgb(253, 253, 253);
+		padding: 20px;
+	}
+	.phone2 .gr {
+		width: 240px;
+		overflow: hidden;
+	}
 }
