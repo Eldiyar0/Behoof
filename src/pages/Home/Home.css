@@ -1,202 +1,693 @@
 #home {
-  margin-top: 30px;
+	margin-top: 30px;
 }
 .category {
-  display: flex;
-  justify-content: space-around;
+	display: flex;
+	justify-content: space-between;
 }
 .category1 {
-  background-color: rgb(242, 245, 249);
-  width: 550px;
-  height: 200px;
-  border-radius: 5px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  h1 {
-    font-family: Inter;
-    font-weight: 800;
-    font-size: 28px;
-    color: rgb(15, 17, 19);
-    span {
-      color: rgb(255, 77, 77);
-    }
-  }
-  button {
-    background-color: rgb(255, 77, 77);
-    color: rgb(255, 255, 255);
-    width: 200px;
-    height: 52px;
-    border: none;
-    font-size: 16px;
-    display: flex;
-    align-items: center;
-    right: 150px;
-  }
+	background-color: rgb(242, 245, 249);
+	width: 700px;
+	height: 200px;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-left: 3pc;
+	gap: 15px;
+}
+.category1 h1 {
+	font-family: Inter;
+	font-weight: 900;
+	font-size: 34px;
+	color: rgb(15, 17, 19);
+}
+.category1 h1 span {
+	color: rgb(255, 77, 77);
+}
+
+.category1 button {
+	background-color: rgb(255, 77, 77);
+	color: rgb(255, 255, 255);
+	width: 200px;
+	border: none;
+	display: flex;
+	align-items: center;
+	padding: 15px 0;
+	padding-left: 0.45pc;
+	font-size: 16px;
+	right: 150px;
 }
 .category2 {
-  background-color: rgb(242, 245, 249);
-  width: 400px;
-  height: 200px;
-  border-radius: 5px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  h1 {
-    font-family: Inter;
-    font-weight: 800;
-    font-size: 28px;
-    color: rgb(15, 17, 19);
-    span {
-      color: rgb(255, 77, 77);
-    }
-  }
-  button {
-    background-color: rgb(255, 77, 77);
-    color: rgb(255, 255, 255);
-    width: 120px;
-    height: 52px;
-    border: none;
-    font-size: 16px;
-    display: flex;
-    align-items: center;
-    right: 150px;
-  }
+	background-color: rgb(242, 245, 249);
+	width: 450px;
+	height: 200px;
+	border-radius: 5px;
+	justify-content: center;
+	padding-left: 3pc;
+	gap: 15px;
+	display: flex;
+	flex-direction: column;
+}
+.category2 h1 {
+	font-family: Inter;
+	font-weight: 800;
+	font-size: 34px;
+	color: rgb(15, 17, 19);
+}
+.category2 h1 span {
+	color: rgb(255, 77, 77);
+}
+.category2 button {
+	background: rgb(255, 77, 77);
+	color: rgb(255, 255, 255);
+	width: 120px;
+	border: none;
+	padding: 14px 0;
+	padding-left: 0.7pc;
+	font-size: 16px;
+	display: flex;
+	align-items: center;
 }
 .bestChoise {
-  display: flex;
-  margin-top: 70px;
-  background-color: rgb(242, 245, 249);
+	margin-top: 70px;
+	background-color: rgb(242, 245, 249);
+	width: 100%;
+	padding: 75px 0;
 }
-.gadgets {
-  h2 {
-    font-weight: 600;
-    font-size: 24px;
-    font-family: Inter;
-  }
-  .products {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-  }
+.gadgets h2 {
+	font-weight: 600;
+	font-size: 24px;
+	text-align: left;
+	font-family: Inter;
+	padding-bottom: 1pc;
+}
+.gadgetsProducts {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 1pc;
+	justify-content: space-between;
+}
+
+.gadgetsProducts img {
+	width: 124px;
+	height: 124px;
+	padding: 10px;
+	margin-bottom: 1pc;
+	border-radius: 10px;
+	background: rgb(253, 253, 253);
 }
 .phone {
-  width: 164px;
-  height: 164px;
-  background-color: white;
-  border-radius: 5px;
-  padding: 5px 0 5px 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  h5 {
-    font-weight: 600;
-    font-family: Inter;
-    font-size: 16px;
-  }
+	width: 120px;
+	height: 164px;
+	border-radius: 5px;
+	padding: 5px 0 5px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.phone h5 {
+	font-weight: 600;
+	color: black;
+	font-family: Inter;
+	font-size: 16px;
 }
 .laptop {
-  width: 164px;
-  height: 164px;
-  background-color: white;
-  border-radius: 5px;
-  padding: 5px 0 5px 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  h5 {
-    font-weight: 600;
-    font-family: Inter;
-    font-size: 16px;
-  }
+	width: 120px;
+	height: 164px;
+	border-radius: 5px;
+	padding: 5px 0 5px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.laptop h5 {
+	font-weight: 600;
+	font-family: Inter;
+	color: black;
+	font-size: 16px;
 }
 .tablet {
-  width: 164px;
-  height: 164px;
-  background-color: white;
-  border-radius: 5px;
-  padding: 5px 0 5px 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  h5 {
-    font-weight: 600;
-    font-family: Inter;
-    font-size: 16px;
-  }
+	width: 120px;
+	height: 164px;
+	border-radius: 5px;
+	padding: 5px 0 5px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.tablet h5 {
+	font-weight: 600;
+	font-family: Inter;
+	color: black;
+	font-size: 16px;
 }
 .clock {
-  width: 164px;
-  height: 164px;
-  background-color: white;
-  border-radius: 5px;
-  padding: 5px 0 5px 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  h5 {
-    font-weight: 600;
-    font-family: Inter;
-    font-size: 16px;
-  }
+	width: 164px;
+	height: 164px;
+	border-radius: 5px;
+	padding: 5px 0 5px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.clock h5 {
+	font-weight: 600;
+	font-family: Inter;
+	color: black;
+	font-size: 16px;
 }
 .play {
-  width: 164px;
-  height: 164px;
-  background-color: white;
-  border-radius: 5px;
-  padding: 5px 0 5px 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  h5 {
-    font-weight: 600;
-    font-family: Inter;
-    font-size: 16px;
-  }
+	width: 120px;
+	height: 164px;
+	border-radius: 5px;
+	padding: 5px 0 5px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.play h5 {
+	font-weight: 600;
+	font-family: Inter;
+	color: black;
+	font-size: 16px;
 }
 .head-phones {
-  width: 164px;
-  height: 164px;
-  background-color: white;
-  border-radius: 5px;
-  padding: 5px 0 5px 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  h5 {
-    font-weight: 600;
-    font-family: Inter;
-    font-size: 16px;
-  }
+	width: 120px;
+	height: 164px;
+	border-radius: 5px;
+	padding: 5px 0 5px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.head-phones h5 {
+	font-weight: 600;
+	font-family: Inter;
+	font-size: 16px;
+	color: black;
 }
 .speaker {
-  width: 164px;
-  height: 164px;
-  background-color: white;
-  border-radius: 5px;
-  padding: 5px 0 5px 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  h5 {
-    font-weight: 600;
-    font-family: Inter;
-    font-size: 16px;
-  }
+	width: 120px;
+	height: 164px;
+	border-radius: 5px;
+	padding: 5px 0 5px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.speaker h5 {
+	font-weight: 600;
+	font-family: Inter;
+	font-size: 16px;
+	color: black;
 }
 .acc {
-  width: 164px;
-  height: 164px;
-  background-color: white;
-  border-radius: 5px;
-  padding: 5px 0 5px 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  h5 {
-    font-weight: 600;
-    font-family: Inter;
-    font-size: 16px;
-  }
+	width: 120px;
+	height: 164px;
+	border-radius: 5px;
+	padding: 5px 0 5px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.acc h5 {
+	font-weight: 600;
+	color: black;
+	font-family: Inter;
+	font-size: 16px;
+}
+.btnCategory {
+	margin-top: 50px;
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	align-items: center;
+}
+.a {
+	margin-top: 3pc;
+	margin-bottom: 4pc;
+}
+.s {
+	border: none;
+	background: rgb(253, 253, 253);
+	width: 120px;
+	height: 40px;
+	border-radius: 5px;
+	font-size: 14px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.s:hover {
+	color: rgb(255, 77, 77);
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.grade button {
+	border-radius: 50%;
+	border: none;
+	font-size: 20px;
+	background-color: rgb(253, 253, 253);
+	width: 50px;
+	height: 50px;
+}
+.grInf {
+	margin-top: 50px;
+	display: flex;
+	flex-wrap: wrap-reverse;
+	justify-content: center;
+	gap: 30px;
+}
+.products10 {
+	border-radius: 10px;
+	width: 500px;
+	background-color: rgb(253, 253, 253);
+	padding: 20px;
+}
+.productsButtonMainCard {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-bottom: 20px;
+}
+.productsButtonMainCard h3 {
+	font-size: 15px;
+}
+.inf {
+	display: flex;
+	justify-content: space-between;
+}
+.raBtns {
+	display: flex;
+	gap: 20px;
+}
+.phone2 {
+	display: flex;
+}
+.phone2 .gr {
+	width: 350px;
+}
+.inf button {
+	border-radius: 50%;
+	border: none;
+	font-size: 20px;
+	background-color: rgb(242, 245, 249);
+	width: 50px;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.products10 h5 {
+	color: rgb(126, 135, 148);
+	font-family: Inter;
+}
+.products10 h3 {
+	color: rgb(15, 17, 19);
+	font-family: Inter;
+}
+.teksts {
+	margin-top: 50px;
+}
+.teksts h1 {
+	font-weight: 600;
+	font-family: Inter;
+	font-size: 20px;
+	padding-bottom: 20px;
+}
+.tekst {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.tekst h1 {
+	font-weight: 800;
+	font-family: Inter;
+	font-size: 40px;
+	color: rgb(255, 77, 77);
+}
+.tekst h5 {
+	font-weight: 400;
+	font-size: 15px;
+	font-family: Inter;
+	color: rgb(15, 17, 19);
+	width: 283px;
+}
+.advert {
+	width: 1200px;
+	margin-top: 50px;
+}
+.smartClock {
+	width: 200px;
+	background: rgb(242, 245, 249);
+	display: flex;
+	flex-direction: column;
+	padding: 20px 20px;
+	height: 250px;
+	justify-content: space-around;
+	border-radius: 10px;
+}
+.new {
+	padding-bottom: 1pc;
+}
+.smartClock img {
+	width: 120px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.smartClock p {
+	color: rgb(126, 135, 148);
+	font-family: Inter;
+	font-size: 13px;
+}
+.smartClock h4 {
+	color: rgb(38, 49, 65);
+	font-family: Inter;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 20px;
+	letter-spacing: 0%;
+	text-align: left;
+	font-family: Inter;
+}
+.price {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.newBtns button {
+	border-radius: 50%;
+	border: none;
+	font-size: 20px;
+	background-color: white;
+	width: 30px;
+	height: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.newBtns {
+	display: flex;
+	gap: 10px;
+}
+.new {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.new button {
+	display: flex;
+	align-items: center;
+	background: transparent;
+	border: none;
+	color: rgb(255, 77, 77);
+	font-weight: 500;
+	font-family: Inter;
+	font-size: 16px;
+}
+.new h3 {
+	font-family: Inter;
+	font-weight: 600;
+	font-size: 20px;
+}
+.newProducts {
+	margin-top: 50px;
+}
+.newProducts1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 30px;
+}
+.newProducts2 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 30px;
+}
+.PRODUCTS {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+.review {
+	margin-top: 50px;
+}
+.revPhone {
+	background: rgb(242, 245, 249);
+	width: 310px;
+	border-radius: 10px;
+	padding-bottom: 1.4pc;
+}
+.revPhone img {
+	width: 100%;
+	border-radius: 10px 0 0 0;
+}
+.revPhone h3 {
+	font-family: Inter;
+	font-weight: 600;
+	font-size: 16px;
+}
+.revPhone p {
+	font-family: Inter;
+	font-weight: 400;
+	padding: 10px 0;
+	color: rgb(126, 135, 148);
+	font-size: 14px;
+}
+.revPhone button {
+	display: flex;
+	align-items: center;
+	background: transparent;
+	border: none;
+	color: rgb(255, 77, 77);
+	font-weight: 500;
+	padding: 0;
+	font-family: Inter;
+	font-size: 16px;
+}
+.start {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.start h3 {
+	font-family: Inter;
+	font-weight: 600;
+	font-size: 20px;
+}
+.start button {
+	display: flex;
+	align-items: center;
+	background: transparent;
+	border: none;
+	color: rgb(255, 77, 77);
+	font-weight: 500;
+	font-family: Inter;
+	font-size: 16px;
+}
+.detail {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 1pc;
+}
+
+.economic {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 5pc;
+	background: rgb(246, 247, 250);
+	padding: 40px 70px;
+}
+
+.economicTextInButton h1 {
+	font-size: 48px;
+	font-weight: 700;
+	line-height: 64px;
+	padding-bottom: 20px;
+	width: 620px;
+}
+.economicTextInButton h1 span {
+	font-size: 48px;
+	font-weight: 700;
+	line-height: 64px;
+	color: rgb(255, 77, 77);
+}
+
+.smartClockImages {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	padding-bottom: 0.5pc;
+}
+
+.revPhoneText {
+	padding-left: 1pc;
+}
+
+.planLogo {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 100%;
+	color: black;
+}
+
+@media (max-width: 375px) {
+	.category {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		gap: 20px;
+	}
+	.category1 {
+		width: 288px;
+	}
+	.category2 {
+		width: 288px;
+	}
+
+	.category1 h1 {
+		font-family: Inter;
+		font-weight: 900;
+		font-size: 21px;
+		color: rgb(15, 17, 19);
+	}
+	.category2 h1 {
+		font-family: Inter;
+		font-weight: 900;
+		font-size: 21px;
+		color: rgb(15, 17, 19);
+	}
+	.gadgetsProducts {
+		display: flex;
+		flex-direction: column;
+	}
+	.grInf {
+		align-items: center;
+		width: 100%;
+		justify-content: start;
+		display: flex;
+		overflow: scroll;
+		/* flex-direction: row; */
+		align-content: center;
+		flex-wrap: nowrap;
+	}
+	.tekst {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+	.economic {
+		display: flex;
+		margin-top: 5pc;
+		background: rgb(246, 247, 250);
+		flex-direction: column;
+		align-items: flex-start;
+		padding: 10px;
+	}
+	.economicTextInButton h1 {
+		font-size: 27px;
+		font-weight: 700;
+		line-height: 35px;
+		padding-bottom: 20px;
+		width: 100%;
+	}
+	.economicTextInButton h1 span {
+		font-size: 27px;
+		font-weight: 700;
+		line-height: 35px;
+
+		padding-bottom: 20px;
+	}
+	.economicTextButtonsA img {
+		width: 300px;
+		margin-bottom: 1pc;
+	}
+	.newProducts1 {
+		display: flex;
+		align-items: flex-start;
+		width: 100%;
+		justify-content: start;
+		overflow: scroll;
+		/* flex-direction: row; */
+		flex-wrap: nowrap;
+	}
+	.newProducts2 {
+		display: flex;
+		align-items: flex-start;
+		width: 100%;
+		overflow: scroll;
+		/* flex-direction: row; */
+		justify-content: start;
+
+		flex-wrap: nowrap;
+	}
+	.smartClock {
+		width: 341px;
+		background: rgb(242, 245, 249);
+		display: flex;
+		flex-direction: column;
+		padding: 20px 20px;
+		height: 250px;
+		justify-content: space-around;
+		border-radius: 10px;
+	}
+	.smartClock h4 {
+		color: rgb(38, 49, 65);
+		font-family: Inter;
+		font-size: 10px;
+		font-weight: 600;
+		line-height: 17px;
+		letter-spacing: 0%;
+		text-align: left;
+		font-family: Inter;
+	}
+
+	.detail {
+		display: flex;
+		align-items: flex-start;
+		overflow: scroll;
+		justify-content: space-between;
+		/* flex-direction: row; */
+		flex-wrap: nowrap;
+	}
+	.footer {
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+		gap: 40px;
+	}
+	.footerEndText {
+		color: rgb(161, 171, 185);
+		font-family: Inter;
+		font-size: 13px;
+		font-weight: 400;
+		line-height: 24px;
+		margin-bottom: 0.2pc;
+		letter-spacing: 0%;
+		text-align: left;
+	}
+	.products10 {
+		border-radius: 10px;
+		width: 300px;
+		background-color: rgb(253, 253, 253);
+		padding: 20px;
+	}
+	.phone2 .gr {
+		width: 240px;
+		overflow: hidden;
+	}
 }
