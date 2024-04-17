@@ -1,63 +1,76 @@
-.header {
-  display: flex;
-  gap: 30px;
+.rating {
+  box-sizing: border-box;
+  border: 1px solid rgb(253, 253, 253);
+  border-radius: 12px;
+  background: rgb(246, 247, 250);
+  width: 313px;
+  height: 48px;
+  padding: 12px 16px 12px 16px;
+  gap: 5px;
 }
-.logo {
-  width: 186px;
-  height: 60px;
-  top: 0;
-  left: 0;
-}
-.header h4 {
-  font-weight: 400;
-  font-size: 14px;
-  color: Grayscale/800 rgb(38, 49, 65);
-}
-.products {
-  width: 200px;
-  height: 52px;
-  padding: 16px, 20px, 16px, 20px;
-  background: rgb(255, 77, 77);
+.rating-value {
+  color: rgb(126, 135, 148);
+  font-family: Inter;
+  font-size: 16px;
   font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.rating-values {
+  color: rgb(126, 135, 148);
+  font-family: Inter;
   font-size: 16px;
-  color: rgb(255, 255, 255);
-  border: none;
-  border-radius: 5px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: left;
 }
-.header input {
-  width: 641px;
-  height: 52px;
-  padding: 14px, 20px, 14px, 20px;
-  background-color: rgb(242, 245, 249);
-  font-weight: 400;
-  font-size: 16px;
-  color: rgb(161, 171, 185);
-  outline: none;
-  border: none;
+
+.rating input {
+  display: none;
+  opacity: 1;
 }
-.btns button {
-  width: 52px;
-  height: 52px;
-  padding: 14px, 14px, 14px, 14px;
-  background-color: rgb(242, 245, 249);
-  border: none;
-  border-radius: 5px;
-  font-size: 20px;
-  font-weight: 400;
+
+.rating label {
+  float: right;
+  cursor: pointer;
+  color: #ccc;
+  transition: color 0.3s, transform 0.3s, box-shadow 0.3s;
 }
-.btns {
-  display: flex;
-  gap: 20px;
+
+.rating label:before {
+  content: "\2605";
+  font-size: 30px;
+  transition: color 0.3s;
 }
+
+.rating input:checked ~ label,
+.rating label:hover,
+.rating label:hover ~ label {
+  color: #ffc300;
+  transform: scale(1.2);
+  transition: color 0.3s, transform 0.3s, box-shadow 0.3s;
+  animation: bounce 0.5s ease-in-out alternate;
+}
+
+@keyframes bounce {
+  to {
+    transform: scale(1.3);
+  }
+}
+
 .products__text {
   display: flex;
   gap: 12px;
+  align-items: center;
 }
 .main {
   color: rgb(161, 171, 185);
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
+  text-decoration: none;
 }
 .qwe {
   color: rgb(38, 49, 65);
@@ -69,6 +82,7 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
+  text-decoration: none;
 }
 .hero {
   display: flex;
@@ -82,12 +96,20 @@
   font-weight: 700;
   line-height: 58px;
 }
-.hero-text {
+.hero-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: rgb(38, 49, 65);
   font-family: Inter;
   font-size: 16px;
   font-weight: 500;
   line-height: 20px;
+  border-radius: 8px;
+  width: 415px;
+  height: 48px;
+  background: rgb(246, 247, 250);
+  border: none;
 }
 .characteristics {
   border: 1px solid rgb(242, 245, 249);
@@ -96,24 +118,8 @@
   width: 734px;
   height: 344px;
   background: rgb(253, 253, 253);
-}
-.characteristics-title {
-  color: rgb(15, 17, 19);
-  font-family: Inter;
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 32px;
-  letter-spacing: 0%;
-  text-align: left;
-}
-.characteristics-text {
-  color: rgb(38, 49, 65);
-  font-family: Inter;
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 28px;
-  letter-spacing: 0%;
-  text-align: left;
+  padding-left: 24px;
+  justify-content: flex-start;
 }
 
 .btn {
@@ -126,28 +132,503 @@
   border: none;
   margin: 0 12px;
 }
-.Range {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: static;
-  width: 200px;
-  height: 116px;
-  padding: 0px;
-  flex: none;
-  order: 3;
-  flex-grow: 0;
-  margin: 12px 0;
-}
-.radio {
-  color: rgb(15, 17, 19);
+.character {
+  border: 1px solid rgb(242, 245, 249);
+  border-radius: 12px;
+  width: 734px;
+  height: 384px;
+  background: rgb(253, 253, 253);
 }
 
-.Battery {
+.Range-title {
+  color: black;
+}
+.character1 {
+  display: flex;
+  gap: 20px;
+  margin-top: 56px;
+}
+.character__title {
+  margin-left: 20px;
+  color: rgb(15, 17, 19);
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.character__content {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.wicker__content {
+  display: flex;
+  justify-content: space-around;
+  gap: 40px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.character-title {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.wicker1 {
+  border: 1px solid rgb(242, 245, 249);
+  border-radius: 12px;
+  width: 734px;
+  height: 384px;
+  background: rgb(253, 253, 253);
+}
+.wicker {
+  display: flex;
+}
+.titles {
+  display: flex;
+  padding-top: 20px;
+}
+
+.wicker-title {
+  width: 425px;
+  height: 32px;
+  flex-grow: 1;
+  margin: 0px 2px;
+  margin-left: 10px;
+}
+.wicker-btn {
+  color: rgb(255, 77, 77);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  background: none;
+  border: none;
+}
+.wicker__content {
+  display: flex;
+}
+.switch {
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  width: 62px;
+  height: 35px;
+}
+
+.switch input {
+  opacity: 1;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0px;
+  background: #fff;
+  transition: 0.4s;
+  border-radius: 30px;
+  border: 1px solid #ccc;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1.9em;
+  width: 1.9em;
+  border-radius: 16px;
+  left: 1.2px;
+  top: 0;
+  bottom: 0;
+  background-color: white;
+  box-shadow: 0 2px 5px #999999;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: rgb(255, 77, 77);
+  border: 1px solid transparent;
+}
+
+input:checked + .slider:before {
+  transform: translateX(1.5em);
+}
+.p {
+  display: flex;
+  padding-left: 70px;
+  margin-top: -13px;
+}
+.According-btn {
+  background: rgb(253, 253, 253);
+  width: 316px;
+  height: 52px;
+  border: none;
+  margin-top: 20px;
+}
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image {
+  width: 240px;
+  height: 240px;
+  display: flex;
+  justify-content: flex-start;
+}
+.iPhone {
+  width: 1440px;
+  height: 304px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  align-items: flex-start;
+  padding: 20px;
+  flex: none;
+  order: 1;
+  margin: 20px 0px;
+  border: 1px solid rgb(242, 245, 249);
+  border-radius: 12px;
+  background: rgb(253, 253, 253);
 }
-.characteristics__btn {
+.Iphone__content {
   display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+.Iphone__titles {
+  gap: 20px;
+  display: flex;
+  align-items: center;
+}
+.BsHeart1 {
+  background: none;
+  border: none;
+  cursor: grab;
+}
+.BsHeart2 {
+  background: none;
+  border: none;
+  cursor: grab;
+}
+.rating {
+  display: flex;
+  align-items: center;
+}
+.Iphone-title1 {
+  box-sizing: border-box;
+  border: 1px solid rgb(253, 253, 253);
+  border-radius: 12px;
+  background: rgb(246, 247, 250);
+  width: 211px;
+  height: 48px;
+  color: rgb(48, 209, 112);
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Iphone__title2 {
+  display: flex;
+  align-items: center;
+}
+.reviews-titles {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.reviews-title1 {
+  color: rgb(48, 209, 112);
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0%;
+  padding-left: 60px;
+}
+
+.reviews-title2 {
+  color: rgb(15, 17, 19);
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.frame {
+  width: 261px;
+  height: 196px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  margin-top: 70px;
+}
+.Frame-title {
+  color: rgb(15, 17, 19);
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0%;
+}
+.Frame-title1 {
+  color: rgb(0, 128, 255);
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0%;
+}
+.icon {
+  width: 15.75px;
+  height: 10.5px;
+}
+.Frame-text {
+  display: flex;
+  gap: 53px;
+}
+.Frame-titles {
+  display: flex;
+  flex-direction: column;
+}
+.Frame-btn {
+  width: 261px;
+  height: 52px;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 20px 16px 20px;
+  background: rgb(255, 77, 77);
+  color: #ffff;
+  border: none;
+  margin-top: 20px;
+  cursor: grab;
+}
+.buttons {
+  display: none;
+}
+
+.character__content.is-active {
+  right: 0;
+  opacity: 3;
+}
+@media screen and (max-width: 375px) {
+  .buttons {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+  }
+  .button {
+    gap: 10px;
+    color: rgb(255, 77, 77);
+    margin-left: 10px;
+    width: Fill (187px) px;
+    height: Hug (48px) px;
+    padding: 12px 16px 12px 16px;
+    gap: 5px;
+    opacity: 0px;
+    border: none;
+  }
+
+  .character__content {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    right: 0%;
+    height: 100vh;
+    width: 30vw;
+    padding: 30px;
+    transition: 1s;
+    opacity: 0;
+    transition: 1s;
+    opacity: 0;
+    transform: translate(100% 0);
+  }
+
+  .products__text {
+    display: none;
+  }
+  .hero-btn {
+    display: none;
+  }
+  .character1 {
+    display: none;
+  }
+  .According {
+    display: none;
+  }
+  .iPhone {
+    position: static;
+    width: 343px;
+    height: 274px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 12px;
+    margin: 16px 0px;
+  }
+
+  .rating {
+    position: static;
+    width: 135px;
+    height: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 4px 8px 4px 8px;
+    margin: 0px 4px;
+    color: rgb(126, 135, 148);
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+  }
+  .rating label:hover ~ label {
+    display: none;
+  }
+  .frame {
+    display: none;
+  }
+
+  .rating input {
+    display: none;
+  }
+
+  .rating label {
+    display: none;
+  }
+
+  .rating label:before {
+    display: none;
+  }
+
+  .rating input:checked ~ label,
+  .rating label:hover,
+  .rating label:hover ~ label {
+    display: none;
+  }
+
+  @keyframes bounce {
+    to {
+      transform: scale(1.3);
+    }
+  }
+  .Iphone-title1 {
+    width: 134px;
+    height: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 4px 8px 4px 8px;
+    margin: 0px 4px;
+    color: rgb(48, 209, 112);
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    margin-left: -140px;
+    margin-top: -90px;
+  }
+  .reviews-title {
+    width: 319px;
+    height: 18px;
+    display: flex;
+    flex-direction: column;
+    margin: 4px 0px;
+    color: rgb(15, 17, 19);
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0%;
+    margin-top: -85px;
+    margin-left: -130px;
+  }
+  .reviews-title1 {
+    justify-content: center;
+    color: rgb(48, 209, 112);
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0%;
+    display: flex;
+    align-items: center;
+    margin-left: -370px;
+    margin-top: -15px;
+  }
+  .reviews-title2 {
+    color: rgb(0, 0, 0);
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    margin-top: -45px;
+    margin-left: -400px;
+  }
+
+  .rating {
+    margin-top: -55px;
+    margin-left: -10px;
+  }
+  .BsHeart1 {
+    margin-top: 90px;
+    margin-left: -300px;
+  }
+  .BsHeart2 {
+    margin-top: 90px;
+    margin-left: -20px;
+  }
+  .Frame-title {
+    display: none;
+  }
+  .Frame-title1 {
+    color: rgb(0, 0, 0);
+    width: 193.6px;
+    margin-left: -50px;
+    height: 16px;
+  }
+  .image {
+    width: 89px;
+    height: 89px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    transform: rotate(0.26deg);
+    padding-top: 130px;
+    display: flex;
+    justify-content: center;
+  }
+  .Iphone__content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .reviews-titles {
+    display: flex;
+    flex-direction: column;
+  }
+  .BsHeart {
+    display: flex;
+    flex-direction: column;
+  }
 }

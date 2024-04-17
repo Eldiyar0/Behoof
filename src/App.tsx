@@ -1,6 +1,13 @@
-import './App.css'
-import Products from './pages/products/products'
-// import Header from './components/Header/Header'
+import "./App.css";
+// import Header from "./components/Header/Header";
+import Products from "./pages/products/products";
+
+// const router = createBrowserRouter([
+//   {
+//     path: "/Prost",
+//     element: <Products />,
+//   },
+// ]);
 
 function App() {
   return (
@@ -8,11 +15,11 @@ function App() {
       <div className="container">
         <div className="app">
           {/* <Header/> */}
-          <Products/>
+          <Products />
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
