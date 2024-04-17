@@ -1,57 +1,144 @@
 #footer {
-	background: rgb(242, 245, 249);
-	padding: 34px 0 25px 0;
+    background: rgb(242, 245, 249);
+    padding: 34px 0 0 0;
 }
 .footer {
-	display: flex;
-	justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
 
 .footerTegs {
-	display: flex;
-	flex-direction: column;
-	align-items: start;
-	gap: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 15px;
 }
 
 .footerIcons {
-	display: flex;
-	align-items: center;
-	width: 130px;
-	justify-content: space-between;
+    display: flex;
+    align-items: center;
+    width: 130px;
+    justify-content: space-between;
 }
 
+.footer-btns {
+    display: flex;
+    padding: 10px 0px 10px 0px;
+    background: white;
+    display: none;
+}
+
+.footer-btns button:focus {
+    list-style: none;
+    color: rgb(255, 77, 77);
+    font-family: Inter;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.footer-btns button {
+    list-style: none;
+    color: rgb(126, 135, 148);
+    font-family: Inter;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.footer-btns button svg{
+    font-size: 20px;
+}
+
+
 .footerTegs h5 {
-	color: rgb(161, 171, 185);
-	font-family: Inter;
-	font-size: 16px;
-	font-weight: 400;
-	line-height: 24px;
-	margin-bottom: 0.2pc;
-	letter-spacing: 0%;
-	text-align: left;
+    color: rgb(161, 171, 185);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 0.2pc;
+    letter-spacing: 0%;
+    text-align: left;
 }
 .footerTegs h4 {
-	color: rgb(38, 49, 65);
-	font-family: Inter;
-	font-size: 16px;
-	font-weight: 400;
-	line-height: 24px;
-	letter-spacing: 0%;
-	text-align: left;
+    color: rgb(38, 49, 65);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: left;
 }
 
 .footerEndText {
-	color: rgb(161, 171, 185);
-	font-family: Inter;
-	font-size: 16px;
-	font-weight: 400;
-	line-height: 24px;
-	margin-bottom: 0.2pc;
-	letter-spacing: 0%;
-	text-align: left;
+    color: rgb(161, 171, 185);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 0.2pc;
+    letter-spacing: 0%;
+    text-align: left;
 }
 
 .footerIcons h4 {
-	font-size: 19px;
+    font-size: 19px;
+}
+
+@media (max-width: 783px) {
+    .footer {
+        display: flex;
+        flex-direction: column;
+    }
+    .footerEndText {
+        padding-top: 20px;
+        font-size: 15px;
+    }
+    .footer-btns {
+        display: flex;
+        margin-top: 20px;
+        width: 100%;
+        margin-right: 30px;
+        background: white;
+        display: block;
+    }
+    .footer-btns button {
+        background-color: white;
+        border: none;
+        border-radius: 5px;
+        font-weight: 400;
+    }
+    .footer-btns li{
+        font-family: Inter;
+    }
+}
+
+@media (max-width: 461px) {
+    .footer {
+        display: flex;
+        flex-direction: column;
+    }
+    .footerEndText {
+        padding-top: 20px;
+        font-size: 15px;
+    }
+    .footer-btns {
+        display: flex;
+        margin-top: 20px;
+        width: 100%;
+        margin-right: 30px;
+        background: white;
+        display: block;
+    }
+    .footer-btns button {
+        background-color: white;
+        border: none;
+        border-radius: 5px;
+        font-weight: 400;
+    }
 }

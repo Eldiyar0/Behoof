@@ -61,3 +61,46 @@
 	justify-content: space-between;
 	width: 350px;
 }
+
+
+@media (max-width: 1200px) {
+	.btns {
+	 display: none;
+	}
+	.f {
+	 display: none;
+	}
+	.header {
+	 display: flex;
+	 flex-direction: column;
+	 width: auto;
+	}
+	.header input {
+	 width: 100%;
+	 border-radius: 10px;
+	}
+	.headerButtonInInput {
+	 width: 100%;
+	}
+   }
+
+@media (max-width: 375px) {
+	.btns {
+	 display: none;
+	}
+	.f {
+	 display: none;
+	}
+	.header {
+	 display: flex;
+	 flex-direction: column;
+	 width: auto;
+	}
+	.header input {
+	 width: 100%;
+	 border-radius: 10px;
+	}
+	.headerButtonInInput {
+	 width: 100%;
+	}
+   }
